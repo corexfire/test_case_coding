@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS apbatech_test;
+USE apbatech_test;
+
+CREATE TABLE IF NOT EXISTS apbatech_test (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    mobile_number VARCHAR(20) NOT NULL,
+    foto VARCHAR(255) NOT NULL
+);
